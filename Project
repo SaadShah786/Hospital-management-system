@@ -1,0 +1,73 @@
+package Hospital_Management_System;
+
+import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
+import java.awt.*;
+
+public class Login extends JFrame {
+    JTextField Userfield;
+    JPasswordField Passwordfield;
+
+    JButton b1 , b2 ;
+
+    JLabel UserName = new JLabel("Username");
+    JLabel password = new JLabel("Password");
+
+    Login()
+    {
+        UserName.setBounds(40 , 20 , 100 , 30);
+        UserName.setFont(new Font("Calibri" , Font.BOLD , 20));
+        UserName.setForeground(Color.BLACK);
+        add(UserName);
+
+        password.setBounds(40 , 80 , 100 , 30);
+        password.setFont(new Font("Calibri" , Font.BOLD , 20));
+        password.setForeground(Color.BLACK);
+        add(password);
+
+        Userfield = new JTextField();
+        Userfield.setBounds(150,20,150,30);
+        Userfield.setFont(new Font("Calibri" , Font.PLAIN , 15));
+        Userfield.setBackground(new Color(235, 52, 152));
+        add(Userfield);
+
+        Passwordfield = new JPasswordField();
+        Passwordfield.setBounds(150,80,150,30);   // <-- CHANGED (y: 70 → 80)
+        Passwordfield.setFont(new Font("Calibri" , Font.PLAIN , 15));
+        Passwordfield.setBackground(new Color(235, 52, 152));
+        add(Passwordfield);
+
+        ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon/Login.png"));
+        Image i = imageIcon.getImage().getScaledInstance(300 ,200 , Image.SCALE_DEFAULT);
+        ImageIcon imageIcon1 = new ImageIcon(i);
+        JLabel imagelabel = new JLabel(imageIcon1);
+        imagelabel.setBounds(350 , 50 , 300 , 300);   // <-- CHANGED (better position)
+        add(imagelabel);
+
+        b1 = new JButton("Login");
+        b1.setBounds(40 , 140 , 120 ,30);
+        b1.setFont(new Font("serif" , Font.BOLD , 15));
+        b1.setBackground(Color.BLACK);
+        b1.setForeground(Color.white);
+        add(b1);
+
+        b2 = new JButton("Cancel");
+        b2.setBounds(180 , 140 , 120 ,30);
+        b2.setFont(new Font("serif" , Font.BOLD , 15));
+        b2.setBackground(Color.BLACK);
+        b2.setForeground(Color.white);
+        add(b2);
+
+        getContentPane().setBackground( new Color(28 , 138 , 129));
+        setSize(900, 400);   // <-- CHANGED (window size 1000×500 → 900×400)
+        setLocation(400 , 250);
+        setLayout(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public static void main(String[] args)
+    {
+        new Login();
+    }
+}
