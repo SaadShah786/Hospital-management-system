@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
+import SaadShah.SQLConnection;
 
 public class Login extends JFrame implements ActionListener
 {
@@ -17,7 +18,7 @@ public class Login extends JFrame implements ActionListener
     JLabel UserName = new JLabel("Username");
     JLabel password = new JLabel("Password");
 
-    Login()
+    public  Login()
     {
         UserName.setBounds(40 , 20 , 100 , 30);
         UserName.setFont(new Font("Calibri" , Font.BOLD , 20));

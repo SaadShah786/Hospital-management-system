@@ -10,11 +10,11 @@ public class SQLConnection
     Connection connection;
     Statement statement;
 
-    SQLConnection()
+    public SQLConnection()
     {
         try
         {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital" , "root" , "Saad");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/login" , "root" , "mshafaysiddiqui");
             statement = connection.createStatement();
 
         }
