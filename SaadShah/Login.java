@@ -89,7 +89,7 @@ public class Login extends JFrame implements ActionListener
 
                 if(result.next())
                 {
-                    new Reception();
+                   // new Reception();
                     setVisible(false);
                 }
                 else
