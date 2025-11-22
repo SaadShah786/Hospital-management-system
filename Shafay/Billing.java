@@ -2,6 +2,8 @@ package Shafay;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+
+
 public class Billing{
     Patient patient;
     double  doctorFee;
