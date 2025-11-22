@@ -14,7 +14,7 @@ public class SQLConnection
     {
         try
         {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital" , "root" , "Saad");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital" , "root" , "Saadandfahad786");
             statement = connection.createStatement();
 
         }
