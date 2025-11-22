@@ -18,7 +18,11 @@ public class Login extends JFrame implements ActionListener
     JLabel UserName = new JLabel("Username");
     JLabel password = new JLabel("Password");
 
+<<<<<<< HEAD
     public  Login()
+=======
+    public Login()
+>>>>>>> 2f984f39ddcf6aadc661b4803ce4a0f87e010a9f
     {
         UserName.setBounds(40 , 20 , 100 , 30);
         UserName.setFont(new Font("Calibri" , Font.BOLD , 20));
@@ -90,7 +94,7 @@ public class Login extends JFrame implements ActionListener
 
                 if(result.next())
                 {
-                    new Reception();
+                   // new Reception();
                     setVisible(false);
                 }
                 else

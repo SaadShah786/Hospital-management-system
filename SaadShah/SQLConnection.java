@@ -14,7 +14,11 @@ public class SQLConnection
     {
         try
         {
+<<<<<<< HEAD
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/login" , "root" , "mshafaysiddiqui");
+=======
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital" , "root" , "Saadandfahad786");
+>>>>>>> 2f984f39ddcf6aadc661b4803ce4a0f87e010a9f
             statement = connection.createStatement();
 
         }
