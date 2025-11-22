@@ -1,4 +1,4 @@
-import java.SaadShah.*;
+import SaadShah.*;
 
 class main
 {
