@@ -1,4 +1,4 @@
-package Hospital_Management_System;
+package SaadShah;
 
 import javax.swing.*;
 import javax.swing.plaf.ColorUIResource;
