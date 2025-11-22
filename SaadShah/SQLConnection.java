@@ -10,7 +10,7 @@ public class SQLConnection
     Connection connection;
     Statement statement;
 
-    SQLConnection()
+    public SQLConnection()
     {
         try
         {
